@@ -1,6 +1,5 @@
 import './App.css'
-import Intro from './components/Intro'
-import { Nav } from './components/Nav'
+import Intro from './pages/Intro'
 import RightSidebar from './components/RightSidebar'
 import Sidebar from './components/Sidebar'
 import Portfolio from './pages/Portfolio'
@@ -8,12 +7,13 @@ import Portfolio from './pages/Portfolio'
 function App() {
 
   return (
-    <div className='flex gap-8 h-screen mx-24'>
-      <Sidebar/>
-      {/* <Intro/> */}
-      <Portfolio/>
-      <RightSidebar/>
-    </div>
+    <div className='flex gap-8 h-screen px-24 bg-gray-800 text-white border '>
+      
+        <Sidebar className='' />
+        <Intro />
+      {/* <Portfolio/> */}
+        <RightSidebar />
+      </div>
   )
 }
 
