@@ -1,5 +1,7 @@
 import { FaWhatsapp, FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
+
 
 
 export default function RightSidebar() {
@@ -19,10 +21,15 @@ export default function RightSidebar() {
             <div className="w-px h-16 bg-black mx-auto"></div>
 
             <div className="mx-auto grid gap-4">
-                <FaWhatsapp size={24}/>
-                <FaGithub size={24}/>
-                <CiLinkedin size={24}/>
+                <FaWhatsapp size={24} />
+                <FaGithub size={24} />
+                <CiLinkedin size={24} />
 
+            </div>
+
+            <div className="mx-auto grid gap-4 ">
+                <IoIosArrowDropup size={40}/>
+                <IoIosArrowDropdown size={40}/>
             </div>
         </div>
     )
