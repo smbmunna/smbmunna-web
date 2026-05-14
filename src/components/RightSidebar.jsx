@@ -7,7 +7,7 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 export default function RightSidebar() {
 
     return (
-        <div className="my-auto flex flex-col gap-12 border">
+        <div className="my-auto flex flex-col gap-12 border p-4 rounded-2xl bg-[#343539]">
             <div className="text-center">
                 <p>3</p>
                 <p>May</p>

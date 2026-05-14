@@ -7,7 +7,7 @@ import Portfolio from './pages/Portfolio'
 function App() {
 
   return (
-    <div className='flex gap-8 h-screen px-24 bg-gray-800 text-white border '>
+    <div className='flex gap-8 h-screen px-24 bg-[#232324] text-white border overflow-hidden'>
       
         <Sidebar className='' />
         <Intro />
