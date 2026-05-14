@@ -4,7 +4,13 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 
 
-export default function RightSidebar() {
+export default function RightSidebar({ pages, setActivePage, activePage }) {
+    const currentIndex = pages.indexOf(activePage);
+    console.log(currentIndex);
+
+    const goUp = () => { if (currentIndex > 0) setActivePage(pages[currentIndex - 1]) }
+    const goDown = () => { if (currentIndex < pages.length - 1) setActivePage(pages[currentIndex + 1]) }
+
 
     return (
         <div className="my-auto flex flex-col gap-12 border p-4 rounded-2xl bg-[#343539]">
@@ -28,8 +34,14 @@ export default function RightSidebar() {
             </div>
 
             <div className="mx-auto grid gap-4 ">
-                <IoIosArrowDropup size={40}/>
-                <IoIosArrowDropdown size={40}/>
+                <IoIosArrowDropup
+                    className={currentIndex === 0 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
+                    onClick={goUp}
+                    size={40} />
+                <IoIosArrowDropdown
+                    className={currentIndex === pages.length - 1 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
+                    onClick={goDown}
+                    size={40} />
             </div>
         </div>
     )
