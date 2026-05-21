@@ -1,4 +1,6 @@
-import project_1 from '../../src/assets/projects/project_1.jpg'
+import PortfolioCard from '@/components/reusable/PortfolioCard'
+import gamers_hub_1 from '../../src/assets/projects/gamers_hub_1.png'
+import rise_at_seven_1 from '../../src/assets/projects/rise_at_seven_1.png'
 
 export default function Portfolio (){
     
@@ -18,10 +20,9 @@ export default function Portfolio (){
 
             {/* Projects */}
             <div className="grid grid-cols-3 gap-4 mt-16 mx-auto">
-                <div className='rounded-2xl'><img src={project_1} alt="project img" /></div>
-                <div className='rounded-2xl'><img src={project_1} alt="project img" /></div>
-                <div className='rounded-2xl'><img src={project_1} alt="project img" /></div>
-                
+                <PortfolioCard title="Gamers Hub" img={gamers_hub_1}/>
+                <PortfolioCard title="Rise at Seven" img={rise_at_seven_1}/>
+                <PortfolioCard img={gamers_hub_1}/>                
             </div>
         </div>
     )

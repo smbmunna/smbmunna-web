@@ -5,11 +5,11 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
 
 
 export default function RightSidebar({ pages, setActivePage, activePage }) {
-    const currentIndex = pages.indexOf(activePage);
-    console.log(currentIndex);
+    // const currentIndex = pages.indexOf(activePage);
+    // console.log(currentIndex);
 
-    const goUp = () => { if (currentIndex > 0) setActivePage(pages[currentIndex - 1]) }
-    const goDown = () => { if (currentIndex < pages.length - 1) setActivePage(pages[currentIndex + 1]) }
+    // const goUp = () => { if (currentIndex > 0) setActivePage(pages[currentIndex - 1]) }
+    // const goDown = () => { if (currentIndex < pages.length - 1) setActivePage(pages[currentIndex + 1]) }
 
 
     return (
@@ -35,12 +35,12 @@ export default function RightSidebar({ pages, setActivePage, activePage }) {
 
             <div className="mx-auto grid gap-4 ">
                 <IoIosArrowDropup
-                    className={currentIndex === 0 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
-                    onClick={goUp}
+                    //className={currentIndex === 0 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
+                    //onClick={goUp}
                     size={40} />
                 <IoIosArrowDropdown
-                    className={currentIndex === pages.length - 1 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
-                    onClick={goDown}
+                    //className={currentIndex === pages.length - 1 ? 'opacity-20 cursor-not-allowed' : 'cursor-pointer hover:text-amber-500'}
+                    //onClick={goDown}
                     size={40} />
             </div>
         </div>
