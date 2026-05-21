@@ -1,6 +1,4 @@
 import PortfolioCard from '@/components/reusable/PortfolioCard'
-import gamers_hub_1 from '../../src/assets/projects/gamers_hub_1.png'
-import rise_at_seven_1 from '../../src/assets/projects/rise_at_seven_1.png'
 
 import { projectData } from '@/data/projects';
 import { Link } from 'react-router-dom';

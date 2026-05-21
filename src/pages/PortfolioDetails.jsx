@@ -4,6 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiChakraui } from "react-icons/si";
 
+import rise_at_seven_cover from '@/assets/projects/rise_at_seven_cover.png'; 
+
 
 
 export default function PortfolioDetails() {
@@ -14,7 +16,7 @@ export default function PortfolioDetails() {
     return (
         <div className="min-h-full flex flex-col justify-between bg-[#343539] pb-4 rounded-2xl">
             <div>
-                <img className="w-1/2 mx-auto mt-14" src={project.img} alt="Project img" />
+                <img className="w-11/12 mx-auto mt-14 rounded-2xl" src={project.cover} alt="Project img" />
             </div>
 
             <div className="flex gap-8 mt-4 justify-between w-5/6 mx-auto">
