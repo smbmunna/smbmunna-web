@@ -5,7 +5,7 @@ export const projectData = [
     {
         id: 1,
         title: 'Gamers Hub',
-        description: 'A platform built for tracking gaming stats and reviews.',
+        description: 'A platform built for tracking gaming data and reviews using the popular rawg.io API , where users can search for games, check the review, filter and sort the game data by platforms, relavancy, release date etc. and much more. ',
         github: 'https://github.com/smbmunna/gamers-hub.git',
         live: 'https://gamers-hub-mu.vercel.app/',
         img: gamers_hub_1
@@ -13,7 +13,7 @@ export const projectData = [
     {
         id: 2,
         title: 'Rise at Seven',
-        description: 'A high-fidelity landing page recreation focusing on performance.',
+        description: 'A pixel-perfect frontend recreation of the homepage of the Rise at Seven website as part of the Junior MERN Developer hiring task for DeveloperLook.',
         github: 'https://github.com/smbmunna/rise-at-seven.git',
         live: 'https://rise-at-seven-eta.vercel.app/',
         img: rise_at_seven_1

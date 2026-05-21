@@ -13,7 +13,7 @@ export default function RightSidebar({ pages, setActivePage, activePage }) {
 
 
     return (
-        <div className="my-auto flex flex-col gap-12 border p-4 rounded-2xl bg-[#343539]">
+        <div className="flex flex-col justify-between gap-12  p-2 rounded-2xl bg-[#343539]">
             <div className="text-center">
                 <p>3</p>
                 <p>May</p>

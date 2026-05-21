@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 export default function Portfolio() {
 
     return (
-        <div className="mb-16 px-4 pt-16 border flex flex-col w-full items-center h-screen mx-auto rounded-2xl bg-[#343539]">
-            <h1 className="text-3xl mb-4 font-semibold text-amber-500">PORTFOLIO</h1>
+        <div className="mb-16 px-4 pt-16 border flex flex-col w-full items-center min-h-full mx-auto rounded-2xl bg-[#343539]">
+            <h1 className="text-3xl mb-2 font-semibold text-amber-500">PORTFOLIO</h1>
             <h3 className="text-xl font-semibold">See My Awesome Work</h3>
 
             {/* tabs */}
-            <div className="mt-8">
+            <div className="mt-4">
                 <ul className="flex gap-8">
                     <li className='text-amber-500'><a href="#">All</a></li>
                     <li><a href="#">Frontend Projects</a></li>
@@ -22,7 +22,7 @@ export default function Portfolio() {
             </div>
 
             {/* Projects */}
-            <div className="grid grid-cols-3 gap-4 mt-16 mx-auto">
+            <div className="grid grid-cols-3 gap-4 mt-8 mx-auto  bg-[#343539] rounded-2xl">
                 {
                     projectData.map(project => <Link to={`/portfolio/${project.id}`}><PortfolioCard key={project.id} project={project} /></Link>)
                 }
