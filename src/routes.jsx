@@ -1,5 +1,5 @@
 import RootLayout from "./layouts/RootLayout";
-import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Intro from "./pages/Intro";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
@@ -12,7 +12,7 @@ export const routesConfig= [
         children: [
             {index: true, element: <Intro/>},
             {path: 'portfolio', element: <Portfolio/>},
-            {path: 'about', element: <About/>}, 
+            {path: 'contact', element: <Contact/>}, 
             {path: 'portfolio/:id', element: <PortfolioDetails/>}
         ]
     }

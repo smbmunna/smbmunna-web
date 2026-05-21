@@ -12,7 +12,7 @@ export function Nav() {
       <ul className="flex justify-between gap-4">
         <li  className="bg-[#232324] px-3 py-3 rounded-lg"><Link to='/'><IoHomeOutline size={30} /></Link></li>
         <li  className="bg-[#232324] px-3 py-3 rounded-lg"><Link to='/portfolio'><CiImageOn size={30} /></Link></li>
-        <li  className="bg-[#232324] px-3 py-3 rounded-lg"><Link to='/about'><FaRegMessage size={30} /></Link></li>
+        <li  className="bg-[#232324] px-3 py-3 rounded-lg"><Link to='/contact'><FaRegMessage size={30} /></Link></li>
       </ul>
     </div>
   )
