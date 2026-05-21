@@ -15,10 +15,8 @@ export default function RightSidebar({ pages, setActivePage, activePage }) {
 
     return (
         <div className="flex flex-col justify-between gap-12  p-2 rounded-2xl bg-[#343539]">
-            <div className="text-center">
-                {/* <p>3</p>
-                <p>May</p>
-                <p>2026</p> */}
+            <div className="text-center py-4">
+                <CurrentDate/>
             </div>
 
             <div>
