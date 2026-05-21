@@ -22,7 +22,7 @@ export default function Portfolio() {
             {/* Projects */}
             <div className="grid grid-cols-3 gap-4 mt-8 mx-auto  bg-[#343539] rounded-2xl">
                 {
-                    projectData.map(project => <Link to={`/portfolio/${project.id}`}><PortfolioCard key={project.id} project={project} /></Link>)
+                    projectData.map(project => <Link key={project.id} to={`/portfolio/${project.id}`}><PortfolioCard project={project} /></Link>)
                 }
             </div>
         </div>

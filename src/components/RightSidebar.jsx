@@ -1,6 +1,7 @@
 import { FaWhatsapp, FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
+import CurrentDate from "./reusable/CurrentDate";
 
 
 
@@ -15,9 +16,9 @@ export default function RightSidebar({ pages, setActivePage, activePage }) {
     return (
         <div className="flex flex-col justify-between gap-12  p-2 rounded-2xl bg-[#343539]">
             <div className="text-center">
-                <p>3</p>
+                {/* <p>3</p>
                 <p>May</p>
-                <p>2026</p>
+                <p>2026</p> */}
             </div>
 
             <div>
