@@ -32,14 +32,14 @@ export default function PortfolioDetails() {
                         <div>                            
                             <div className="flex gap-8 mt-2 items-center">
                                 <h2 className="font-semibold">Tech Stacks: </h2>
-                                <FaReact size={40} />
-                                <RiTailwindCssFill size={40} />
-                                <SiChakraui size={40} />
+                                <FaReact size={30} />
+                                <RiTailwindCssFill size={30} />
+                                <SiChakraui size={30} />
                             </div>
                         </div>
                         <div className="flex flex-row gap-2">
-                            <Link className="underline" to={project.live}>Live Link</Link>
-                            <Link className="underline" to={project.github}>Github Link</Link>
+                            <Link target="_blank" className="underline" to={project.live}>Live Link</Link>
+                            <Link target="_blank" className="underline" to={project.github}>Github Link</Link>
                         </div>
                     </div>
                 </div>
