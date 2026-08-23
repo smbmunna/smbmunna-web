@@ -1,9 +1,25 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function PortfolioCard({ project }) {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <div>
-      <img className="rounded-2xl" src={project.thumb} alt="project img" />
+      <div className="relative overflow-hidden rounded-2xl">
+        {/* Skeleton Loader */}
+        {!isLoaded && (
+          <div className="absolute inset-0 bg-gray-700 animate-pulse" />
+        )}
+
+        {/* Project Image */}
+        <img
+          className={`rounded-2xl transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+          src={project.thumb}
+          alt="project img"
+          onLoad={() => setIsLoaded(true)}
+        />
+      </div>
       <div className="px-4">
         <h2 className="text-lg font-light my-2">{project.title}</h2>
         <p className="text-sm text-gray-300">{project.subtitle}</p>
