@@ -1,8 +1,13 @@
 import { Link, useParams } from "react-router-dom"
 import { projectData } from "@/data/projects";
-import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiChakraui } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiPrisma } from "react-icons/si";
+
+
+
 
 import rise_at_seven_cover from '@/assets/projects/rise_at_seven_cover.png'; 
 
@@ -32,9 +37,11 @@ export default function PortfolioDetails() {
                         <div>                            
                             <div className="flex gap-8 mt-2 items-center">
                                 <h2 className="font-semibold">Tech Stacks: </h2>
-                                <FaReact size={30} />
+                                <SiNextdotjs size={30} />
                                 <RiTailwindCssFill size={30} />
-                                <SiChakraui size={30} />
+                                <FaNode size={30} />
+                                <BiLogoPostgresql size={30} />
+                                <SiPrisma size={30} />
                             </div>
                         </div>
                         <div className="flex flex-row gap-2">

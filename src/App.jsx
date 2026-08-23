@@ -4,7 +4,6 @@ import { routesConfig } from './routes'
 
 function App() {
   const element = useRoutes(routesConfig);
-
   return element;
 }
 
