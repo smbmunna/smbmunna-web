@@ -3,17 +3,18 @@ import Contact from "./pages/Contact";
 import Intro from "./pages/Intro";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetails from "./pages/PortfolioDetails";
+import { VisitorsFirebase } from "./pages/VisitorsFirebase";
 
-
-export const routesConfig= [
-    {
-        path: '/',
-        element: <RootLayout/>, 
-        children: [
-            {index: true, element: <Intro/>},
-            {path: 'portfolio', element: <Portfolio/>},
-            {path: 'contact', element: <Contact/>}, 
-            {path: 'portfolio/:id', element: <PortfolioDetails/>}
-        ]
-    }
-]
+export const routesConfig = [
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Intro /> },
+      { path: "portfolio", element: <Portfolio /> },
+      { path: "contact", element: <Contact /> },
+      { path: "portfolio/:id", element: <PortfolioDetails /> },
+      { path: "visitors", element: <VisitorsFirebase /> },
+    ],
+  },
+];
