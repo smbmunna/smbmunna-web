@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function PortfolioCard({ project }) {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
-    <div className="w-11/12 md:w-full mx-auto">
+    <div className="w-11/12 md:w-full mx-auto ">
       <div className="relative overflow-hidden rounded-2xl">
         {/* Skeleton Loader */}
         {!isLoaded && (

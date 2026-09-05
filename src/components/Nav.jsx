@@ -4,11 +4,10 @@ import { FaRegMessage } from "react-icons/fa6";
 import { CiImageOn } from "react-icons/ci";
 
 import { Link } from "react-router-dom";
-import NavButton from "./reusable/NavButton";
 
 export function Nav() {
   return (
-    <div className="mt-4 md:mt-12 mb-4 md:mb-0">
+    <div className="mt-4 mb-4 md:mb-0">
       <ul className="flex justify-between gap-4">
         <li className=" hover:bg-amber-500 px-3 py-3 rounded-lg text-[12px] flex flex-col items-center">
           <Link to="/">
