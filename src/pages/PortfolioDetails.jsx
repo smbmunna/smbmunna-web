@@ -43,7 +43,7 @@ export default function PortfolioDetails() {
 
           <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-between items-center">
             <div>
-              <div className="flex gap-2 md:gap-8 mt-2 items-center reveal">
+              <div className="flex gap-2 lg:gap-8 mt-2 items-center reveal">
                 <h2 className="font-semibold">Tech Stacks: </h2>
                 <SiNextdotjs size={30} />
                 <RiTailwindCssFill size={30} />
@@ -52,11 +52,11 @@ export default function PortfolioDetails() {
                 <SiPrisma size={30} />
               </div>
             </div>
-            <div className="flex flex-row gap-2">
-              <Link target="_blank" className="underline" to={project.live}>
+            <div className="flex lg:flex-row  gap-2 lg-gap-0">
+              <Link target="_blank" className="underline text-amber-500" to={project.live}>
                 Live Link
               </Link>
-              <Link target="_blank" className="underline" to={project.github}>
+              <Link target="_blank" className="underline text-amber-500" to={project.github}>
                 Github Link
               </Link>
             </div>

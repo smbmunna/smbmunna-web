@@ -43,7 +43,7 @@ export const projectData = [
     id: 2,
     title: "Rise at Seven",
     subtitle:
-      "A responsive frontend landing page developed for an organization, focusing on modern UI design,responsive layout.",
+      "A responsive frontend landing page developed for an agency.",
     description:
       "A pixel-perfect, premium creative agency frontend platform engineered to capture the bold, high-energy identity of leading digital marketing agencies. The project focuses heavily on advanced motion design, fluid entrance transitions, and an immersive user experience built on modern web animation standards.",
     features: [
