@@ -83,8 +83,8 @@ export default function Sidebar() {
         {/* Footer */}
         <footer>
           <p className="text-center text-xs text-gray-400">
-            © 2026 All rights reserved by{" "}
-            <span className="text-amber-500">Mahmud Munna</span>
+            © 2026 All rights reserved by <br/>
+            <span className="text-amber-500"> Mahmud Munna</span>
           </p>
         </footer>
       </div>
