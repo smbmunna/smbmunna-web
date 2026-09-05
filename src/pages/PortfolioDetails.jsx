@@ -39,9 +39,9 @@ export default function PortfolioDetails() {
           ))}
           <hr className="text-gray-600 mt-4" />
 
-          <div className="flex gap-6 justify-between items-center">
+          <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-between items-center">
             <div>
-              <div className="flex gap-8 mt-2 items-center">
+              <div className="flex gap-2 md:gap-8 mt-2 items-center">
                 <h2 className="font-semibold">Tech Stacks: </h2>
                 <SiNextdotjs size={30} />
                 <RiTailwindCssFill size={30} />

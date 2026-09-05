@@ -11,8 +11,8 @@ export default function Portfolio() {
             <h3 className="text-xl font-semibold">See My Awesome Work</h3>
 
             {/* tabs */}
-            <div className="mt-4">
-                <ul className="flex gap-8">
+            <div className="mt-4 hidden md:block">
+                <ul className="md:flex gap-8">
                     <li className='text-amber-500'><a href="#">All</a></li>
                     <li><a href="#">Frontend Projects</a></li>
                     <li><a href="#">Fullstack Projects</a></li>
@@ -20,7 +20,7 @@ export default function Portfolio() {
             </div>
 
             {/* Projects */}
-            <div className="grid grid-cols-3 gap-4 mt-8 mx-auto  bg-[#343539] rounded-2xl">
+            <div className="grid md:grid-cols-3 gap-12 md:gap-4 mt-8 mx-auto  bg-[#343539] rounded-2xl">
                 {
                     projectData.map(project => <Link key={project.id} to={`/portfolio/${project.id}`}><PortfolioCard project={project} /></Link>)
                 }
