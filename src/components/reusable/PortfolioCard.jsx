@@ -21,8 +21,8 @@ export default function PortfolioCard({ project }) {
         />
       </div>
       <div className="px-4">
-        <h2 className="text-lg font-light my-2">{project.title}</h2>
-        <p className="text-sm text-gray-300">{project.subtitle}</p>
+        <h2 className="text-sm font-light my-2">{project.title}</h2>
+        <p className="text-xs text-gray-400">{project.subtitle}</p>
       </div>
     </div>
   );

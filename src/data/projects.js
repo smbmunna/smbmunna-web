@@ -4,6 +4,9 @@ import rise_at_seven_cover from "@/assets/projects/rise_at_seven_cover.png";
 import gamers_hub_cover from "@/assets/projects/gamers_hub_cover.png";
 import pretech_thumb from "../../src/assets/projects/pretech_thumb.png";
 import pretech_cover from "../../src/assets/projects/pretech_cover.png";
+import bytespace_thumb from "../../src/assets/projects/bytespace_thumb.png";
+import bytespace_cover from "../../src/assets/projects/bytespace_cover.png";
+
 
 export const projectData = [
   {
@@ -43,7 +46,7 @@ export const projectData = [
     id: 2,
     title: "Rise at Seven",
     subtitle:
-      "A responsive frontend landing page developed for an agency.",
+      "A full responsive agency frontend landing page.",
     description:
       "A pixel-perfect, premium creative agency frontend platform engineered to capture the bold, high-energy identity of leading digital marketing agencies. The project focuses heavily on advanced motion design, fluid entrance transitions, and an immersive user experience built on modern web animation standards.",
     features: [
@@ -67,23 +70,27 @@ export const projectData = [
   },
   {
     id: 3,
-    title: "Pretech Solutions",
-    subtitle: "",
+    title: "ByteSpace",
+    subtitle: "Learning Platform UI, Figma to Next.js",
     description:
-      'A sleek, high-performance landing page built with React, designed to showcase next-generation technology solutions. The project focuses heavily on a "premium tech" aesthetic, utilizing modern UI/UX design languages, fluid layout transitions, and an optimized, mobile-first responsive architecture.',
+      'A pixel-faithful online learning platform, from landing page to sign-up, built with Next.js, TypeScript and Tailwind CSS from a Figma design.',
     features: [
       {
         id: 1,
-        desc: "Developed using fully responsive layout systems (CSS Grid and Flexbox), ensuring a seamless, dynamic transition across ultra-wide monitors, standard laptops, tablets, and mobile displays.",
+        desc: "Figma-to-token design system: I extracted the colors, type scale, spacing and 12-column / 1200px grid straight from the Figma file and defined them once as Tailwind v4 theme tokens. Components use semantic names like bg-brand and type-heading-m instead of hard-coded values, so the whole site stays visually consistent and is easy to re-theme.",
       },
       {
         id: 2,
-        desc: "Navigation menus, structural grids, and asset layouts scale down gracefully on smaller viewports, transforming complex multi-column layouts into intuitive, thumb-friendly single-column interfaces.",
+        desc: "Atomic, type-safe architecture: I built the Next.js App Router project with atoms, molecules, organisms and templates in TypeScript. Reusable pieces such as Button, CourseCard and AuthLayout are shared across the landing page, 404, sign-in and sign-up pages. Typed mock data keeps the UI easy to connect to a real backend later.",
+      },
+      {
+        id: 3,
+        desc: "Feature-rich and accessible: The landing page has a hero with layered 3D ornaments, a category-filterable course catalog, a creator CTA, testimonials and a footer. There are also a branded 404 and shared sign-in / sign-up pages with loading and error states. Semantic landmarks, screen-reader labels, visible keyboard focus and optimized WebP images through next/image are built in. I also added responsive layouts, since the design only covered desktop.",
       },
     ],
-    github: "https://github.com/smbmunna/pretech-site.git",
-    live: "https://pretech-site.vercel.app/",
-    thumb: pretech_thumb,
-    cover: pretech_cover,
+    github: "https://github.com/smbmunna/bytespace-new.git",
+    live: "https://bytespace-new-eosin.vercel.app/",
+    thumb: bytespace_thumb,
+    cover: bytespace_cover,
   },
 ];
