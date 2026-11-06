@@ -16,7 +16,7 @@ export default function CurrentDate() {
     const month = currentDate.toLocaleString('en-US', { month: 'long' });
     const year = currentDate.getFullYear();
 
-    console.log('day: ', day, ' Month: ', month, ' Year: ', year);
+    
 
     return (
         <div>
