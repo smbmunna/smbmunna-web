@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function RightSidebar({ pages, setActivePage, activePage }) {
   return (
-    <div className="hidden md:flex flex-col justify-between gap-12  p-2 rounded-2xl bg-[#343539]">
+    <div className="hidden md:flex h-full flex-col justify-between gap-12  p-2 rounded-2xl bg-[#343539]">
       <div className="text-center py-4">
         <CurrentDate />
       </div>
