@@ -2,6 +2,7 @@ import { PiDesktopTowerDuotone } from "react-icons/pi";
 import SkillsPills from "../components/reusable/SkillsPills";
 import SocialMedia from "../components/reusable/SocialMedia";
 import ProjectsSlider from "../components/ProjectsSlider";
+import LinkedInPosts from "../components/LinkedInPosts";
 
 export default function Intro() {
   return (
@@ -20,6 +21,7 @@ export default function Intro() {
 
       <ProjectsSlider />
       <SkillsPills />
+      <LinkedInPosts />
       {/* <SocialMedia /> */}
       <div className="hidden md:block">
         <PiDesktopTowerDuotone className="mx-auto" opacity={0.2} size={220} />

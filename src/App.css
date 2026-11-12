@@ -59,12 +59,14 @@
 }
 
 .projects-slider-track {
-  animation: projects-marquee 40s linear infinite;
+  /* A slider can set --marquee-duration inline to tune its own speed */
+  animation: projects-marquee var(--marquee-duration, 40s) linear infinite;
 }
 
-/* Pause while the user hovers or tabs into a card */
+/* Pause while the user hovers or tabs into a card, or a component asks (.is-paused) */
 .projects-slider:hover .projects-slider-track,
-.projects-slider:focus-within .projects-slider-track {
+.projects-slider:focus-within .projects-slider-track,
+.projects-slider-track.is-paused {
   animation-play-state: paused;
 }
 
