@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "platform": "GitHub",
+    "title": "Open source contributions & pinned repositories",
+    "handle": "@smbmunna",
+    "url": "https://github.com/smbmunna",
+    "icon": "SiGithub",
+    "source": "si"
+  },
+  {
+    "id": 2,
+    "platform": "LinkedIn",
+    "title": "Professional updates & articles",
+    "handle": "@mahmud-munna",
+    "url": "https://linkedin.com/in/mahmud-munna",
+    "icon": "FaLinkedin",
+    "source": "fa"
+  },
+  {
+    "id": 3,
+    "platform": "Medium",
+    "title": "Technical articles & tutorials",
+    "handle": "@smbmunna",
+    "url": "https://medium.com/@smbmunna",
+    "icon": "SiMedium",
+    "source": "si"
+  },
+  {
+    "id": 4,
+    "platform": "X (Twitter)",
+    "title": "Quick dev tips & thoughts",
+    "handle": "@smbmunna",
+    "url": "https://x.com/smbmunna",
+    "icon": "SiX",
+    "source": "si"
+  },
+  {
+    "id": 5,
+    "platform": "dev.to",
+    "title": "Developer community posts",
+    "handle": "@smbmunna",
+    "url": "https://dev.to/smbmunna",
+    "icon": "SiDevdotto",
+    "source": "si"
+  }
+]
