@@ -3,7 +3,7 @@ import { iconMap } from "../../data/icons";
 
 export default function SkillsPills() {
   return (
-    <section className="bg-[#343539] rounded-2xl px-0 pt-6 pb-6 mb-10">
+    <section className="bg-[#343539] rounded-2xl px-0 pt-0 pb-6 mb-10">
       <h2 className="text-amber-500 text-lg md:text-xl font-semibold mb-4 tracking-tight">
         Tech Stack
       </h2>

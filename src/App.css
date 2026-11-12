@@ -52,3 +52,29 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+                                                      /* Projects Slider (auto-scrolling marquee) */
+.projects-slider {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.projects-slider-track {
+  animation: projects-marquee 40s linear infinite;
+}
+
+/* Pause while the user hovers or tabs into a card */
+.projects-slider:hover .projects-slider-track,
+.projects-slider:focus-within .projects-slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes projects-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Respect users who prefer less motion: show a swipeable row instead */
+@media (prefers-reduced-motion: reduce) {
+  .projects-slider { overflow-x: auto; }
+  .projects-slider-track { animation: none; }
+}

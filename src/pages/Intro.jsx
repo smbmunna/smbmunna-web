@@ -1,6 +1,7 @@
 import { PiDesktopTowerDuotone } from "react-icons/pi";
 import SkillsPills from "../components/reusable/SkillsPills";
 import SocialMedia from "../components/reusable/SocialMedia";
+import ProjectsSlider from "../components/ProjectsSlider";
 
 export default function Intro() {
   return (
@@ -16,8 +17,10 @@ export default function Intro() {
           portfolio section to see the projects I’ve worked on.
         </p>
       </div>
+
+      <ProjectsSlider />
       <SkillsPills />
-      <SocialMedia />
+      {/* <SocialMedia /> */}
       <div className="hidden md:block">
         <PiDesktopTowerDuotone className="mx-auto" opacity={0.2} size={220} />
       </div>
